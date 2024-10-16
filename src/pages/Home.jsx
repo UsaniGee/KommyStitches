@@ -18,7 +18,7 @@ const Home = () => {
   if (error)
     return <h1 className='flex justify-center items-center h-screen'>{error.message}</h1>
   return (
-    <div className='bg-transparent h-full'>
+    <div className='bg-transparent'>
       <div>
           <ImageSlider />
       </div>
@@ -38,7 +38,7 @@ const Home = () => {
     <WomenCat />
   </section>      
       </div>  
-      <div className='mt-24'>
+      <div className='mt-10'>
         <ComingSoon />
       </div>
     </div>

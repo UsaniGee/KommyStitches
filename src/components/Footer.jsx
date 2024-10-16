@@ -1,6 +1,7 @@
 import React from 'react'
 import { PiCopyrightThin } from 'react-icons/pi'
 import { SiFacebook, SiInstagram, SiWhatsapp } from 'react-icons/si'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -11,9 +12,11 @@ const Footer = () => {
       <div>K<span>ommy</span>S<span>titches</span></div>      
      </div>
      <div className='flex justify-between w-1/6 s:w-[80px] text-3xl s:text-xl'>
-      <div><SiInstagram /></div>
-      <div><SiFacebook /></div>
-      <div><SiWhatsapp /></div>    
+     <a href="https://www.instagram.com/kommys_closet/"><div><SiInstagram /></div></a>
+    
+     <Link><div><SiFacebook /></div></Link>
+     <Link><div><SiWhatsapp /></div></Link>
+        
      </div>
     </footer>
   )

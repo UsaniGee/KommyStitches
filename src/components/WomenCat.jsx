@@ -25,9 +25,9 @@ const {data} = useContext(ProductContext)
             src={item.image}
             alt={item.title || `Image of Clothing`}            
           />
-           <div className='bg-pink-100 bg-opacity-80 text-sm p-3 rounded-3xl capitalize w-fullmt-5 absolute bottom-1 opacity-0 group-hover:opacity-100 transition-all'>
-            <p>{item.title}</p>
-            <p className='mt-3 font-semibold'>${item.price}</p>
+           <div className='bg-pink-100 bg-opacity-80 text-xs p-3 rounded-3xl capitalize w-full backdrop:mt-5 leading-3 absolute bottom-1 opacity-0 group-hover:opacity-100 transition-all'>
+            <p>{item.title.length > 10 ? item.title.substring(0, 30) + "..." : item.title}</p>
+            <p className='mt-1 font-semibold'>${item.price}</p>
            </div>
           </Link>
           <p className='bg-pink-100 w-[80px] mt- absolute -top-2 group-hover:-top-6 -right-5 group-hover:-right-7 rounded-3xl group-hover:scale-110'>10% off</p>

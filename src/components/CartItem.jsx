@@ -1,39 +1,51 @@
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { CartContext } from '../context/CartContext'
+import { FaPlus, FaTrash } from 'react-icons/fa'
+import { FaSquareMinus, FaSquarePlus } from 'react-icons/fa6'
 
 const CartItem = ({item}) => {
     const {removeFromCart, increaseAmount, decreaseAmount} = useContext(CartContext)
   return (
-    <div className='bg-pink-5 s:w-full  p-4 md:flex-row md:items-center md:justify-between '>
-    <div className='flex items-center gap-2 '>
-        {/* Image */}
-    <div className='w-[10%] s:h-[87.5px] s:w-[200px] s:my-5 '>
+    <div className='s:w-full md:flex-row md:items-center md:justify-between text-gray-500'>
+    <div className='flex justify-between items-center pt-4'>
+
+      {/* Image and remove item */}
+     <div>
+         {/* Image */}
+    <div className=' s:my-5 w-[100px]'>
     <Link to={`/product/${item.id}`}>
-      <img className='p-3' src={item.image} alt="" />
+      <img className='w-[] object-cover aspect-square' src={item.image} alt="" />
       </Link>
     </div>
+     {/* Remove */}
+     <div className=' flex text-red-600 hover:underline text-center items-center justify-center gap-1 my-2' onClick={() => removeFromCart(item.id)} >
+        <p><FaTrash /></p>
+        <p>Remove</p>
+     </div>
+     </div>
+
     {/* Title */}
-     <div className=' text-sm'>
+     <div className=' xl:text-[16px] text-xs w-[250px]'> 
      <Link to={`/product/${item.id}`}>
-     <p className='hover:underline'>{item.title}</p>
+     <p className='hover:underline text-left'>{item.title}</p>
      </Link>
      </div>
-     {/* Price */}
-     <div className=''>
+    <div className=''>
+       {/* Price */}
+     <div className='text-center p-3 text-gray-600'>
         <p>$ {item.price}</p>
-        <p>{`$ ${parseFloat(item.price * item.amount).toFixed(2)}`}</p>
+        {/* <p>{`$ ${parseFloat(item.price * item.amount).toFixed(2)}`}</p> */}
      </div>
+
      {/* Quantity */}
-     <div className='flex gap-5 border'>
-        <p onClick={() => decreaseAmount(item.id)}>-</p>
+     <div className='flex gap-5 border cursor-default justify-center items-center'>
+        <p className='text-3xl shadow-md text-pink-100' onClick={() => decreaseAmount(item.id)}><FaSquareMinus /></p>
         <p>{item.amount}</p>
-        <p onClick={() => increaseAmount(item.id)}>+</p>
+        <p className='text-3xl shadow-md text-pink-100' onClick={() => increaseAmount(item.id)}><FaSquarePlus /></p>
      </div>
-      {/* Remove */}
-      <div onClick={() => removeFromCart(item.id)} className='text-red-600 hover:underline'>
-        <p>Remove Item</p>
-     </div>
+    </div>
+     
     </div>
  </div>
   )

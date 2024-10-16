@@ -36,7 +36,7 @@ const Shop = () => {
             alt={item.title || `Image of Clothing`}            
           />
           <div className='bg-blue-100 w-full mt-5 absolute bottom-1 opacity-0 group-hover:opacity-100 transition-all text-xs p-2  rounded-3xl bg-opacity-80'>
-            <p>{item.title}</p>
+            <p>{item.title.length > 30 ? item.title.substring(0, 30) + "..." : item.title}</p>
             <p className='mt-1 font-semibold'>${item.price}</p>
           </div>
           </Link>
@@ -69,7 +69,7 @@ const Shop = () => {
             alt={item.title || `Image of Clothing`}            
           />
            <div className='bg-pink-100 w-full mt-5 absolute bottom-1 opacity-0 bg-opacity-85 text-xs p-2 rounded-3xl group-hover:opacity-100 transition-all'>
-            <p>{item.title}</p>
+            <p>{item.title.length > 10 ? item.title.substring(0, 30) + "..." : item.title}</p>
            <p className='mt-1 font-semibold'>${item.price}</p>
            </div>
           </Link>
