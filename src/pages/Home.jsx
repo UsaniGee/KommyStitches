@@ -6,6 +6,7 @@ import Banner from '../components/Banner'
 import MenCat from '../components/MenCat'
 import WomenCat from '../components/WomenCat'
 import ComingSoon from '../components/ComingSoon'
+import NewsletterBox from '../components/NewsletterBox'
 
 
 const Home = () => {
@@ -41,6 +42,8 @@ const Home = () => {
       <div className='mt-10'>
         <ComingSoon />
       </div>
+
+      <NewsletterBox />
     </div>
   )
 }

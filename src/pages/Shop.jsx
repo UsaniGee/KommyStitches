@@ -1,15 +1,12 @@
 import React, { useContext } from 'react'
 import { ProductContext } from '../context/ProductContext'
-import MenHero from '../assets/images/menhero.jpg'
-import WomenHero from '../assets/images/womenheroo.jpg'
+import MenHero from '../../public/assets/menHero.jpg'
+import WomenHero from '../../public/assets/womenheroo.jpg'
 import { Link } from 'react-router-dom'
-import { CartContext } from '../context/CartContext'
-
 
 
 const Shop = () => {
   const {data} = useContext(ProductContext);
-  const {addToCart} = useContext(CartContext)   
 
   return (
    <div className=''>
@@ -19,7 +16,7 @@ const Shop = () => {
       <div className='mb-36 relative'>
         <img className='h-[400px] w-full object-cover  ' src={MenHero} alt="" />
         <div className='md:top-0 absolute top-[90px] s:top-10 left-[60px] s:left-4 s:w-[250px] w-[300px] text-white text-5xl s:text-3xl font-bold '>
-       <h1 className='text-8xl s:text-7xl shadow-xl shadow-black'>Shop Men's Wears</h1>
+       <h1 className='text-8xl s:text-7xl shadow-xl'>Shop Men's Wears</h1>
        </div>
       </div>
     <section className=' flex justify-center mt-10 mb-36'>
@@ -52,7 +49,7 @@ const Shop = () => {
   <div className='mb-36 relative'> 
     <img className='h-[400px] w-full object-cover' src={WomenHero} alt="" />
     <div className='md:top-0 absolute top-[90px] s:top-5 left-[60px] s:left-4 s:w-[250px] w-[450px] text-white text-5xl s:text-3xl font-bold '>
-       <h1 className='text-8xl s:text-6xl shadow-xl shadow-black'>Shop Women's Wears</h1>
+       <h1 className='text-8xl s:text-6xl shadow-xl'>Shop Women's Wears</h1>
        </div>
   </div>
   <section className=' flex justify-center mt-10 mb-36'>

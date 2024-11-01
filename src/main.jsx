@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import App from './App.jsx'
 import './index.css'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createHashRouter, RouterProvider } from 'react-router-dom'
 import ReactDOM from 'react-dom/client'
 import  Root  from './components/Root'
 import Women from './pages/Women.jsx'
@@ -16,9 +16,12 @@ import CartContextProvider from './context/CartContext.jsx'
 import ProductDetails from './pages/ProductDetails.jsx'
 import MenuContextProvider from './context/MenuContext.jsx'
 import Cart from './components/Cart.jsx'
+import PlaceOrder from './pages/PlaceOrder.jsx'
+import Order from './pages/Order.jsx'
+import Login from './pages/Login.jsx'
 
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Root />,
@@ -59,6 +62,18 @@ const router = createBrowserRouter([
       path: '/cart',
       element: <Cart />
     },
+    {
+      path: '/placeOrder',
+      element: <PlaceOrder />
+    },
+    {
+      path: '/order',
+      element: <Order />
+    },
+    {
+      path: '/login',
+      element: <Login />
+    }
     ],
   },
 ]);

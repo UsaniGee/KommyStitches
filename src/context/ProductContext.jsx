@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
-import React, { createContext } from 'react'
+import React, { createContext, useState } from 'react'
 
 
 export const ProductContext = createContext()
@@ -12,8 +12,12 @@ const ProductProvider = ({children}) => {
       return res.json()      
     }    
   });
+
+  const [search, setSearch ] = useState('')
+  const [showSearch, setShowSearch] = useState(false)
+
   return (
-    <ProductContext.Provider value={{isPending, error, data}}>
+    <ProductContext.Provider value={{isPending, error, data, search, setSearch, showSearch, setShowSearch}}>
       {children}
     </ProductContext.Provider>
   )

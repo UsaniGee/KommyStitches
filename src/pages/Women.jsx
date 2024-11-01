@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { ProductContext } from '../context/ProductContext'
-import WomenHero from '../assets/images/womenheroo.jpg'
+import WomenHero from '../../public/assets/womenheroo.jpg'
 import { Link } from 'react-router-dom'
 
 const Women = () => {

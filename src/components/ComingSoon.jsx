@@ -1,5 +1,5 @@
 import React from 'react'
-import HotNew from '../../src/assets/images/Coming.jpg'
+import HotNew from '/assets/Coming.jpg'
 import CountDown from './CountDown'
 
 const ComingSoon = () => {

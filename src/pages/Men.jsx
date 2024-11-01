@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import MenHero from '../assets/images/menhero.jpg'
+import MenHero from '../../public/assets/menhero.jpg'
 import { ProductContext } from '../context/ProductContext';
 import { Link } from 'react-router-dom';
 

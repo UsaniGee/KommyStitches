@@ -13,10 +13,8 @@ const Footer = () => {
      </div>
      <div className='flex justify-between w-1/6 s:w-[80px] text-3xl s:text-xl'>
      <a href="https://www.instagram.com/kommys_closet/"><div><SiInstagram /></div></a>
-    
      <Link><div><SiFacebook /></div></Link>
      <Link><div><SiWhatsapp /></div></Link>
-        
      </div>
     </footer>
   )

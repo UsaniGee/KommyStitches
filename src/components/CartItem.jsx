@@ -1,14 +1,15 @@
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { CartContext } from '../context/CartContext'
-import { FaPlus, FaTrash } from 'react-icons/fa'
+import {FaTrash } from 'react-icons/fa'
 import { FaSquareMinus, FaSquarePlus } from 'react-icons/fa6'
 
 const CartItem = ({item}) => {
     const {removeFromCart, increaseAmount, decreaseAmount} = useContext(CartContext)
+    
   return (
     <div className='s:w-full md:flex-row md:items-center md:justify-between text-gray-500'>
-    <div className='flex justify-between items-center pt-4'>
+    <div className='flex justify-between items-center pt-4 s:flex-col '>
 
       {/* Image and remove item */}
      <div>
@@ -28,21 +29,21 @@ const CartItem = ({item}) => {
     {/* Title */}
      <div className=' xl:text-[16px] text-xs w-[250px]'> 
      <Link to={`/product/${item.id}`}>
-     <p className='hover:underline text-left'>{item.title}</p>
+     <p className='hover:underline text-left s:text-center'>{item.title}</p>
      </Link>
      </div>
     <div className=''>
        {/* Price */}
-     <div className='text-center p-3 text-gray-600'>
-        <p>$ {item.price}</p>
+     <div className='text-center p-3 text-gray-600 font-bold'>
+        <p>${item.price}</p>
         {/* <p>{`$ ${parseFloat(item.price * item.amount).toFixed(2)}`}</p> */}
      </div>
 
      {/* Quantity */}
-     <div className='flex gap-5 border cursor-default justify-center items-center'>
-        <p className='text-3xl shadow-md text-pink-100' onClick={() => decreaseAmount(item.id)}><FaSquareMinus /></p>
+     <div className='flex gap-5 border cursor-default justify-center items-center s:mb-5'>
+        <p className='text-3xl shadow-md text-pink-300' onClick={() => decreaseAmount(item.id)}><FaSquareMinus /></p>
         <p>{item.amount}</p>
-        <p className='text-3xl shadow-md text-pink-100' onClick={() => increaseAmount(item.id)}><FaSquarePlus /></p>
+        <p className='text-3xl shadow-md text-pink-300' onClick={() => increaseAmount(item.id)}><FaSquarePlus /></p>
      </div>
     </div>
      
