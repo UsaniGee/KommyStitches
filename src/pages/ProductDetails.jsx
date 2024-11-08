@@ -51,7 +51,7 @@ const ProductDetails = () => {
           <div className='pl-4'>(100)</div>
         </div>
 
-        <div className='w-[430px] s:w-auto capitalize mx-[100px]'>
+        <div className='w-[430px] s:w-auto capitalize s:mx-[100px]'>
           {/* Price */}
           <div className='font-bold text-2xl'>
             ${price}
@@ -77,7 +77,7 @@ const ProductDetails = () => {
         )}
          </div>
 
-         <div className='text-gray-400 text-sm s:w-auto mx-[100px]'>
+         <div className='text-gray-400 text-sm s:w-auto s:mx-[100px]'>
           <p>100% Original product.</p>
           <p>Cash on delivery is available on this product.</p>
           <p>Easy return and exchange policy within 7days.</p>

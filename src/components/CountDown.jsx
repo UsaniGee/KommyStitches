@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
 const CountDown = () => {
-    const [timeLeft, setTimeLeft] = useState(30 * 24 * 60 * 60); 
+    const [timeLeft, setTimeLeft] = useState(3 * 24 * 60 * 60); 
 
   useEffect(() => {
     const intervalId = setInterval(() => {
