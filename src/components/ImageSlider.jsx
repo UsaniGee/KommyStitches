@@ -1,5 +1,5 @@
 import React from 'react';
-import Ladies from 'KommyStitches/assets/Ladies.png'
+import Ladies from '/assets/Ladies.png'
 import KidsMix from '/assets/Robeee.png'
 import KidBlue from '/assets/KidBluePj.png'
 
