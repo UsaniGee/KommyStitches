@@ -64,7 +64,7 @@ const ProductDetails = () => {
           </div>
         </div>
       
-         <div className='w-[550px] flex justify-center mt-4 border-b-[1px]'>
+         <div className='w-[430px] s:w-[400px] flex justify-center mt-4 border-b-[1px]'>
           {/* AddToCart Button */}
         {isAddedToCart ? (
           <button className="disabled:opacity-50 cursor-not-allowed flex items-center h-[50px] bg-green-100 rounded-full px-[50px] gap-2 uppercase font-bold mb-5">
@@ -77,7 +77,7 @@ const ProductDetails = () => {
         )}
          </div>
 
-         <div className='text-gray-400 text-sm s:w-auto s:mx-[100px]'>
+         <div className='text-gray-400 text-sm s:w-screen s:mx-[100px]'>
           <p>100% Original product.</p>
           <p>Cash on delivery is available on this product.</p>
           <p>Easy return and exchange policy within 7days.</p>
