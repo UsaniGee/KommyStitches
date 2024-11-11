@@ -12,7 +12,7 @@ const ProductProvider = ({children}) => {
       return res.json()      
     }       
   });
-  console.log(data);
+
 
   const [search, setSearch ] = useState('')
   const [showSearch, setShowSearch] = useState(false)

@@ -4,7 +4,7 @@ import NewsletterBox from '../components/NewsletterBox'
 
 const About = () => {
   return (
-    <div className='mx-[100px] s:mx-10'>
+    <div className='mx-[100px] s:mx-6'>
     <div className='text-2xl text-center pt-8 border-t'>
       <div>ABOUT US</div>
     </div>
@@ -27,17 +27,17 @@ const About = () => {
     </div>
 
     <div className="flex s:flex-col text-sm mb-20 ">
-      <div className="border px-10 s:px-16 py-8 s:py-20 flex flex-col gap-5">
+      <div className="border px-10 s:px-5 py-8 s:py-5 flex flex-col gap-5">
         <b>Quality and Affordability</b>
         <p className='text-gray-600'> We believe that everyone deserves to look their best without breaking the bank. Our commitment to quality and affordability ensures that you get the best value for your money.</p>
       </div>
 
-      <div className="border px-10 s:px-16 py-8 s:py-20 flex flex-col gap-5">
+      <div className="border px-10 s:px-5 py-8 s:py-5 flex flex-col gap-5">
         <b>Unique Style</b>
         <p className='text-gray-600'>Our carefully curated collection features trendy and unique pieces that set you apart from the crowd. We stay ahead of the fashion curve, bringing you the latest styles and trends.</p>
       </div>
 
-      <div className="border px-10 s:px-16 py-8 s:py-20 flex flex-col gap-5">
+      <div className="border px-10 s:px-5 py-8 s:py-5 flex flex-col gap-5">
         <b>Exceptional Customer Service</b>
         <p className='text-gray-600'>We're passionate about providing exceptional customer service. Our friendly and knowledgeable team is always ready to assist you with any questions or concerns.</p>
       </div>

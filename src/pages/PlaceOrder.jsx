@@ -6,33 +6,33 @@ const PlaceOrder = () => {
     const {amount, total} = useContext(CartContext)
     const [method, setMethod] = useState('cod')
   return (
-    <div className='flex s:flex-col gap-4 pt-5 s:pt-14 min-h-[80vh] border-t mx-[100px]'>
+    <div className='flex s:flex-col gap-4 pt-5 s:pt-10 min-h-[80vh] border-t mx-[100px] s:mx-6'>
       {/* -----------------left side----------- */}
       <div className='flex flex-col gap-4 w-full s:max-w-[480px] ' >
 
         <div className='text-xl s:text-2xl my-3'>
             <div className='mb-5 font-bold'>DELIVERY INFORMATION</div>
             <div className='flex gap-3'>
-                <input className='border border-gray-300 rounded py-1.5 px-3 outline-none w-full mb-4 ' type="text" placeholder='First name'/>
-                <input className='border border-gray-300 rounded py-1.5 px-3 outline-none w-full mb-4 ' type="text" placeholder='Last name'/>
+                <input className='border border-gray-300 rounded py-1.5 px-3 outline-none w-full mb-4 placeholder:text-gray-200 placeholder:text-xl' type="text" placeholder='First name'/>
+                <input className='border border-gray-300 rounded py-1.5 px-3 outline-none w-full mb-4 placeholder:text-gray-200 placeholder:text-xl' type="text" placeholder='Last name'/>
             </div>
-                <input className='border border-gray-300 rounded py-1.5 px-3 outline-none w-full mb-4 ' type="email" placeholder='Email address'/>
-                <input className='border border-gray-300 rounded py-1.5 px-3 outline-none w-full mb-4 ' type="text" placeholder='Street'/>
+                <input className='border border-gray-300 rounded py-1.5 px-3 outline-none w-full mb-4 placeholder:text-gray-200 placeholder:text-xl' type="email" placeholder='Email address'/>
+                <input className='border border-gray-300 rounded py-1.5 px-3 outline-none w-full mb-4 placeholder:text-gray-200 placeholder:text-xl' type="text" placeholder='Street'/>
             <div className='flex gap-3'>
-                <input className='border border-gray-300 rounded py-1.5 px-3 outline-none w-full mb-4 ' type="text" placeholder='City'/>
-                <input className='border border-gray-300 rounded py-1.5 px-3 outline-none w-full mb-4 ' type="text" placeholder='State'/>
+                <input className='border border-gray-300 rounded py-1.5 px-3 outline-none w-full mb-4 placeholder:text-gray-200 placeholder:text-xl' type="text" placeholder='City'/>
+                <input className='border border-gray-300 rounded py-1.5 px-3 outline-none w-full mb-4 placeholder:text-gray-200 placeholder:text-xl' type="text" placeholder='State'/>
             </div>
             <div className='flex gap-3'>
-                <input className='border border-gray-300 rounded py-1.5 px-3 outline-none w-full mb-4 ' type="number" placeholder='Zipcode'/>
-                <input className='border border-gray-300 rounded py-1.5 px-3 outline-none w-full mb-4 ' type="text" placeholder='Country'/>
+                <input className='border border-gray-300 rounded py-1.5 px-3 outline-none w-full mb-4 placeholder:text-gray-200 placeholder:text-xl' type="number" placeholder='Zipcode'/>
+                <input className='border border-gray-300 rounded py-1.5 px-3 outline-none w-full mb-4 placeholder:text-gray-200 placeholder:text-xl' type="text" placeholder='Country'/>
             </div>
-            <input className='border border-gray-300 rounded py-1.5 px-3 outline-none w-full mb-4 ' type="number" placeholder='Phone'/>
+            <input className='border border-gray-300 rounded py-1.5 px-3 outline-none w-full mb-4 placeholder:text-gray-200 placeholder:text-xl' type="number" placeholder='Phone'/>
         </div>
 
       </div>
 
       {/* ---------Right Side------- */}
-      <div className='mt-8 w-full'>
+      <div className='w-full'>
         
         <div className='uppercase text-sm'>
              <div className='flex flex-col gap-1  rounded-xl  p-10  '>

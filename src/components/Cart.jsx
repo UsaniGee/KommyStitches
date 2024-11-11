@@ -27,9 +27,9 @@ const Cart = () => {
         </div>
         </div>
       ) : (
-        <section className='h-full'>
+        <section className='h-[68vh] s:h-screen'>
         <div className='flex s:flex-col sm:flex-col mx-20 s:mx-0 gap-5 s:items-center sm:items-center'>
-        <div className='bg-gray-50 my-10 s:my-0 border rounded-lg w-[80%] '>
+        <div className='bg-gray-50 my-10 s:my-0 border rounded-lg w-[80%] s:w-[100%] '>
          <div className='border-b py-1 px-10 text-xl font-bold'> Cart ({amount})</div>
           {cart.map((item) => (
             <div className='' key={item.id}>
@@ -46,9 +46,9 @@ const Cart = () => {
           </div> */}
          </div>
 
-         {/* Cart Sumary */}
+         {/* Cart Summary */}
           <div className='uppercase  my-10 relative text-sm'>
-             <div className='flex flex-col gap-1 bg-gray-50 rounded-xl border p-5 w-[20%] s:w-[350px] sm:w-[400px] md:fixed lg:fixed xl:fixed'>
+             <div className='flex flex-col gap-1 bg-gray-50 rounded-xl border p-5 w-[20%] s:w-fit sm:w-[400px] md:fixed lg:fixed xl:fixed'>
              <div className='mb-4 font-bold'>Cart Summary</div>
              <div className='flex justify-between'>
               <div>Item(s) total </div>

@@ -43,7 +43,7 @@ const Home = () => {
         <ComingSoon />
       </div>
 
-      <NewsletterBox />
+      <div className='s:mx-2'><NewsletterBox /></div>
     </div>
   )
 }

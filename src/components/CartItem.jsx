@@ -27,7 +27,7 @@ const CartItem = ({item}) => {
      </div>
 
     {/* Title */}
-     <div className=' xl:text-[16px] text-xs w-[250px]'> 
+     <div className=' xl:text-[16px] text-xs w-[250px] s:w-fit'> 
      <Link to={`/product/${item.id}`}>
      <p className='hover:underline text-left s:text-center'>{item.title}</p>
      </Link>

@@ -20,15 +20,15 @@ const CountDown = () => {
   return (
     <div className=''> 
       <div className='flex gap-[32px] sm:gap-[20px] sm:w-[500px] sm:text-[18px] s:gap-[5px] text-[#503112]'>
-        <span className='bg-gradient-to-t from-white to-pink-200 rounded-xl font-bold w-[100px] s:w-[60px] h-[100px] s:h-[70px] border flex flex-col justify-center items-center'> <p>{days}</p>
+        <span className='bg-gradient-to-t from-white to-pink-200 rounded-xl font-bold w-[100px] s:w-[40px] h-[100px] s:h-[50px] border flex flex-col justify-center items-center '> <p>{days}</p>
         <p>Days</p> </span>
-        <span className='bg-gradient-to-t from-white to-pink-200 rounded-xl font-bold w-[100px] s:w-[60px] h-[100px] s:h-[70px] border flex flex-col justify-center items-center'> <p>{hours}</p>
+        <span className='bg-gradient-to-t from-white to-pink-200 rounded-xl font-bold w-[100px] s:w-[40px] h-[100px] s:h-[50px] border flex flex-col justify-center items-center'> <p>{hours}</p>
         <p>Hours</p> </span>
-        <span className='bg-gradient-to-t from-white to-pink-200 rounded-xl font-bold w-[100px] s:w-[60px] h-[100px] s:h-[70px] border flex flex-col justify-center items-center'> <p>{minutes}</p>
+        <span className='bg-gradient-to-t from-white to-pink-200 rounded-xl font-bold w-[100px] s:w-[40px] h-[100px] s:h-[50px] border flex flex-col justify-center items-center'> <p>{minutes}</p>
         <p>Minutes</p></span>
-        <span className='bg-gradient-to-t from-white to-pink-200 rounded-xl font-bold w-[100px] s:w-[60px] h-[100px] s:h-[70px] border flex flex-col justify-center items-center'> <p>{seconds}</p>
-        <p></p> secs</span>  
-        <span className='bg-gradient-to-t from-white to-pink-200 rounded-xl font-bold w-[100px] s:w-[60px] h-[100px] s:h-[70px] border flex justify-center items-center'> Left</span>  
+        <span className='bg-gradient-to-t from-white to-pink-200 rounded-xl font-bold w-[100px] s:w-[40px] h-[100px] s:h-[50px] border flex flex-col justify-center items-center'> <p>{seconds}</p>
+        <p className=''>secs</p></span>  
+        <span className='bg-gradient-to-t from-white to-pink-200 rounded-xl font-bold w-[100px] s:w-[40px] h-[100px] s:h-[50px] border flex justify-center items-center'> Left</span>  
       </div>
     </div>
   );
