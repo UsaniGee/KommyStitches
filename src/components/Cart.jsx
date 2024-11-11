@@ -27,7 +27,7 @@ const Cart = () => {
         </div>
         </div>
       ) : (
-        <section className='h-[68vh] s:h-screen'>
+        <section className='h-[68vh] s:h-full'>
         <div className='flex s:flex-col sm:flex-col mx-20 s:mx-0 gap-5 s:items-center sm:items-center'>
         <div className='bg-gray-50 my-10 s:my-0 border rounded-lg w-[80%] s:w-[100%] '>
          <div className='border-b py-1 px-10 text-xl font-bold'> Cart ({amount})</div>
