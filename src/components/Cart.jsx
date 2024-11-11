@@ -21,7 +21,7 @@ const Cart = () => {
         <div>Browse our categories and discover our best deals!</div>
         <div>
         <NavLink to='/shop'>
-            <BtnStyled Name='Shop Now' BtnStyle='bg-[#D9D9D9] font-semibold rounded-full px-[100px] lg:w-1/2 text-2xl mt-3 shadow-xl'/>
+            <BtnStyled Name='Shop Now' BtnStyle='bg-[#D9D9D9] font-semibold rounded-full px-[100px] s:px-0 s:w-[240px] s:h-[60px] lg:w-1/2 text-2xl mt-3 shadow-xl'/>
         </NavLink>
         </div>
         </div>
